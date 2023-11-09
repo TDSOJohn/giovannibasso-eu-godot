@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3nit8e4x6l3x"]
+
+[ext_resource type="Script" path="res://PrimaryMenu.gd" id="1_hacia"]
+[ext_resource type="PackedScene" uid="uid://cp23ejf587ar5" path="res://menu_option.tscn" id="2_f7cqr"]
+
+[node name="PrimaryMenu" type="Node2D"]
+position = Vector2(0, 40)
+script = ExtResource("1_hacia")
+
+[node name="GithubOption" parent="." instance=ExtResource("2_f7cqr")]
+position = Vector2(56, 24)
+text = "ciao"
+
+[node name="LinkedInOption" parent="." instance=ExtResource("2_f7cqr")]
+position = Vector2(56, 120)
+
+[node name="MastodonOption" parent="." instance=ExtResource("2_f7cqr")]
+position = Vector2(56, 216)
+
+[node name="PixelfedOption" parent="." instance=ExtResource("2_f7cqr")]
+position = Vector2(56, 312)
