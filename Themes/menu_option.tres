@@ -1,7 +1,11 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dhstg54425vjo"]
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://dhstg54425vjo"]
 
+[ext_resource type="Texture2D" uid="uid://du7fpmstkqwsm" path="res://Textures/focus.png" id="1_2j3m4"]
 [ext_resource type="Texture2D" uid="uid://ch7jxt834v1u6" path="res://Textures/selection.png" id="1_wsget"]
 [ext_resource type="FontFile" uid="uid://d0bku126crnp3" path="res://Fonts/SAIBA-45.otf" id="2_uoa4u"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k2pb7"]
+texture = ExtResource("1_2j3m4")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gttf5"]
 texture = ExtResource("1_wsget")
@@ -12,5 +16,6 @@ texture = ExtResource("1_wsget")
 [resource]
 default_font = ExtResource("2_uoa4u")
 default_font_size = 64
+Button/styles/focus = SubResource("StyleBoxTexture_k2pb7")
 Button/styles/hover = SubResource("StyleBoxTexture_gttf5")
 Button/styles/normal = SubResource("StyleBoxTexture_vmg7c")
