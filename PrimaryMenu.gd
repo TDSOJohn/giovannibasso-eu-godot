@@ -24,8 +24,9 @@ func move_up():
 	print(cur_index)
 
 func focus_option():
-	if cur_index == 0:
-		$GithubOption.
+	pass
+#	if cur_index == 0:
+#		$GithubOption.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
